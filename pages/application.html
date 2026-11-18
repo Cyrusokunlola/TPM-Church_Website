@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+          content="Apply for church membership or volunteer opportunities at Light of Gospel Fellowship Community Church.">
+        <meta name="author" content="Babatunde Okunlola">
+
+        <title>Application - Light of Gospel Fellowship Community Church</title>
+    </head>
+
+    <body>
+        <header>
+        <h1>
+           Membership and Volunteer Application
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li>Application</li>
+
+            </ul>
+        </nav>
+        </header>
+
+        <main>
+
+            <section>
+                <h2>Become Part of Our Church Family</h2>
+
+                <p>
+                    Thank you for your interest in joining
+                    Light of Gospel Fellowship Community Church.
+                </p>
+
+                <p>
+                    Complete the application form to tell us
+                    about yourself and how you would like
+                    to participate in church activities.
+                </p>
+            </section>
+
+            <section>
+                <h2>Application Form</h2>          
+                      
+                <form action="/submit_page" method="post">
+                <p>
+                    <label for="fullname">Full name:</label>
+                    <input type="text" name="fullname" id="fullname" required>
+                </p>
+
+               <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                </p>
+
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" maxlength="15">
+                </p>
+
+                <fieldset>
+                    <legend>Church Participation</legend>
+
+                    <select id="service" name="service" required>
+                        <option value="">Choose a service</option>
+                        <option value="sunday">Sunday Service</option>
+                        <option value="wednesday">Wednesday Bible Study</option>
+                        <option value="friday">Friday Prayer Meeting</option>
+                    </select>
+                </fieldset>
+                
+                
+
+                <fieldset>
+                    <legend>I am applying as:</legend>
+
+                    <label>
+                        <input type="checkbox" name="interests" value="new_member">
+                        New Member
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interests" value="volunteer">
+                        volunteer
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interests" value="bapistmal">
+                        Bapistmal
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Are you currently attending our church?</legend>
+
+                    <label>
+                        <input type="radio"
+                            name="attendance"
+                            value="yes"
+                            required>
+                        Yes
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                            name="attendance"
+                            value="no">
+                        No
+                    </label>
+                </fieldset>
+
+            <p>
+                    <label for="reason">Tell us a bit about yourself (maximum 200 characters)</label>
+                    <textarea name="reason" id="reason" required maxlength="200" rows="4"></textarea>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="agreement" required> I agree to be contacted by the church.
+                    </label>
+                </p>
+
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+                </form>
+            </section> 
+            
+        </main>
+
+        <footer>
+          <p>©Light of Gospel Fellowship Community Church 2026</p>  
+        </footer>
+
+    </body>
+</html>
